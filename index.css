@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("images/station2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.header {
+    /* background: red; */
+    color: #fff;
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 100%;
+    height: 9%;
+    text-align: center;
+    font-size: 90px;
+    margin-top: auto;
+    padding-top: 60px;
+}
+
+.main-body {
+    /* background-color: red; */
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.body-text-container {
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    padding: 30px;
+    font-size: 75px;
+}
+
+#count-el {
+    /* background-color: yellow; */
+    font-size: 150px;
+}
+
+#save-el {
+    margin-top: 30px;
+}
+
+/* #copyright {
+    text-align: center;
+    width: 100%;
+    height: 2%;
+    margin-top: auto;
+    padding-top: 0px;
+    font-size: 16px;
+} */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 20px;
+    margin-bottom: 0;
+}
+
+#logo {
+    height: 20px;
+    scale: 1;
+}
+
+
+/* -------- button design ---------- */
+button {
+    display: block;
+    margin: 24px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 400px;
+    height: 120px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    box-shadow: 0 9px #999;
+}
+
+#increment-btn {
+    background: rgb(96, 0, 0);
+    transform: transform 0.3s;
+}
+
+#increment-btn:hover {
+    background: #de0000;
+    cursor: pointer;    
+}
+
+#increment-btn:active {
+    background: rgb(96, 0, 0);
+    cursor: pointer;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#save-btn {
+    background: rgb(0, 63, 0);
+}
+
+#save-btn:hover {
+    background:darkgreen;
+    cursor: pointer;
+}
+
+#save-btn:active {
+    background: rgb(0, 63, 0);
+    cursor: pointer;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* --------------- responsive screen ----------------- */
+
+@media only screen 
+and (min-device-width: 1020px)
+
+/* and (orientation : landscape) */ {
+    .header {
+        font-size: 60px;
+        height: 15%;
+        padding-top: 10px;
+        width: 100%;
+    }
+    .main-body {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: auto;
+    }
+
+    h2 {
+        font-size: 50px;
+        width: 100%;
+    }
+    #count-el {
+        font-size: 100px;
+    }
+
+    .body-btn-container {
+        margin-top: 0px;
+        display: flex;
+    }
+
+    button {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    #copyright {
+
+    }
+}
+
+
+
+
+
+/* ---------- code 1 ---------- */
+/* body {
+    display: flexbox;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background-image: url("images/station2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: rgb(30, 255, 0);
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.088);
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: auto;
+    font-size: 45px;
+}
+
+.main-body {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 60px;
+    text-align: center;
+}
+
+.body-text-container {
+    display: flexbox;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.body-btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+#copyright {
+    color:aliceblue;
+    width: 100%;
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.088);
+    text-align: center;
+    padding: 30px ;
+    font-size: 16px;
+} */
+
+/* @media only screen and (min-width: 600px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url("images/station2.jpg");
+    }
+
+    .header {
+        font-size: 70px;
+        color: rgb(30, 255, 0);
+        font-weight: bold;
+    }
+
+    .main-body {
+        display: flex;
+        margin: auto;
+    }
+
+    #counter, #count-el {
+        font-size: 80px;
+    }
+
+    button {
+        width: 350px;
+        height: 80px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+} */
+
+/* @media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        background-image: url("images/station2-phone.jpg");
+    }
+} */
+
+
+
+/* ----------------- revised code --------------- */
+/* body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("station2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+#header {
+    width: 100%;
+    height: 7%;
+    top: 0px;
+    background: #000;
+}
+
+h1 {
+    padding-top: 30px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.main-body {
+    height: 81%;
+}
+
+#body-container {
+    display: block;
+}
+
+.main-body h2 {
+    font-size: 80px;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 7%;
+    background-color: #000;
+}
+
+#copyright {
+    bottom: 0;
+    padding-top: 60px;
+    font-size: 27px;
+    text-align: center;
+} */
+
+
+/* .main-title {
+    padding: 10px 0;
+    background: black;
+    color: rgb(203, 203, 203);
+    width: 100%;
+    height: 65px;
+    justify-content: center;
+    padding: 10px;
+} */
+
+/* body {
+    display: flexbox;
+    background-image: url("station2.jpg");
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-align: center;
+} */
+
+/* .main-body {
+    padding: 10px 0;
+    margin: 50px;
+    color: rgb(203, 203, 203);
+}
+
+#counter-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+} */
+
+
+/* @media only screen and (max-width: 600px) {
+    body {
+        display: flexbox;
+        background-image: url("images/station2.jpg");
+        background-size: cover ;
+        background-position: center;
+        background-attachment: fixed;
+    }
+} */
+
