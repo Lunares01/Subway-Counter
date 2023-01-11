@@ -94,34 +94,40 @@
 
 // let message = "You have tree new notifications." 
 
-let name = "John"
-let greeting = "Hi, my name is"
+// let name = "John"
+// let greeting = "Hi, my name is"
 
-let myGreeting = `${greeting} ${name}.`
-console.log(myGreeting)
+// let myGreeting = `${greeting} ${name}.`
+// console.log(myGreeting)
 
-let points = 4
-let bonusPoints = 10
+// let points = 4
+// let bonusPoints = 10
 
-let totalPoints = 4 + 10
+// let totalPoints = 4 + 10
 
 //9
 //24
 //51
 //100100
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-let countEl = document.getElementById("count-el") // pass in arguments
-let saveEl = document.getElementById("save-el")
-console.log(countEl)
+// 
 
-let count = 0
 
 // function increment() {
 //     count = count + 1
 //     countEl.innerText = count
 //     console.log(count)
 // }
+// function increment() {
+//     count = count + 1
+//     countEl.innerText = count
+//     console.log(count)
+// }~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+let countEl = document.getElementById("count-el") 
+let saveEl = document.getElementById("save-el")
+console.log(countEl)
+
+let count = 0
 
 // Increment Function
 increment = () => {
@@ -138,4 +144,9 @@ save = () => {
     count = 0
 
     console.log (`Saved: ${count}`)
+}
+
+// Clear Entries Function
+clearEnt = () => {
+    saveEl.textContent = "Previous Entries:"
 }

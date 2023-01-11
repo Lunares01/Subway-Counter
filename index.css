@@ -124,16 +124,32 @@ button {
 
 #save-btn {
     background: rgb(0, 63, 0);
+    transform: transform 0.3s;
 }
 
 #save-btn:hover {
-    background:darkgreen;
+    background:rgb(1, 182, 1);
     cursor: pointer;
 }
 
 #save-btn:active {
     background: rgb(0, 63, 0);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#clearEnt-btn {
+    background-color: rgb(21, 0, 105);
+    transform: transform 0.3s;
+}
+
+#clearEnt-btn:hover {
+    background-color: rgb(41, 0, 205);
     cursor: pointer;
+}
+
+#clearEnt-btn:active {
+    background-color: rgb(21, 0, 105);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
@@ -180,9 +196,6 @@ and (min-device-width: 1020px)
         font-size: 16px;
     }
 
-    #copyright {
-
-    }
 }
 
 
