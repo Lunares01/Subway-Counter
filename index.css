@@ -178,11 +178,12 @@ and (min-device-width: 1020px)
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 45px;
         width: 100%;
     }
     #count-el {
-        font-size: 100px;
+        font-size: 90px;
+        padding: 0;
     }
 
     .body-btn-container {
