@@ -9,18 +9,18 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url("images/station2.jpg");
+    background-image: url("images/station5.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
-    color: aliceblue;
+    color: rgb(15, 15, 14);
 }
 
 .header {
     /* background: red; */
-    color: #fff;
+    color: rgb(142, 1, 1);
     flex-shrink: 0;
     flex-grow: 1;
     width: 100%;
@@ -44,7 +44,8 @@ body {
 
 .body-text-container {
     /* background-color: blue; */
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.401);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,10 +58,14 @@ h2 {
 
 #count-el {
     /* background-color: yellow; */
+    color: goldenrod;
     font-size: 150px;
 }
 
 #save-el {
+    background-color:rgba(0, 0, 0, 0.541) ;
+    color: goldenrod;
+    border-style: double;
     margin-top: 30px;
 }
 
@@ -74,6 +79,7 @@ h2 {
 } */
 
 .footer-container {
+    color: rgba(60, 60, 60, 0.717);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -106,7 +112,7 @@ button {
 }
 
 #increment-btn {
-    background: rgb(96, 0, 0);
+    background: rgb(108, 0, 0);
     transform: transform 0.3s;
 }
 
@@ -116,21 +122,21 @@ button {
 }
 
 #increment-btn:active {
-    background: rgb(96, 0, 0);
+    background: rgb(108, 0, 0);
     cursor: pointer;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
 #save-btn {
-    background: rgb(0, 63, 0);
+    background: rgb(0, 16, 0);
     transform: transform 0.3s;
 }
 
 #save-btn:hover {
-    background:rgb(1, 182, 1);
+    background:rgb(4, 127, 4);
     cursor: pointer;
-}
+} 
 
 #save-btn:active {
     background: rgb(0, 63, 0);
@@ -139,7 +145,7 @@ button {
 }
 
 #clearEnt-btn {
-    background-color: rgb(21, 0, 105);
+    background-color: rgb(6, 0, 30);
     transform: transform 0.3s;
 }
 
